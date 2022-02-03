@@ -14,20 +14,9 @@ body {
   margin: 0 auto;
   width: 100%;
   padding: 0 15px;
+  display: flex;
 }
 
-@media (max-width: 1240px) {
-  .container {
-    max-width: 970px;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 750px;
-    margin: 0 auto;
-  }
-}
 @media (max-width: 767px) {
   .container {
     max-width: none;
@@ -191,6 +180,8 @@ b {
   &__container {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    border: 1px solid black;
   }
 
   &__logo {
@@ -207,6 +198,7 @@ b {
     text-transform: uppercase;
     position: relative;
     flex-wrap: wrap;
+    border: 1px solid red;
   }
 
   &__items {
@@ -553,6 +545,7 @@ b {
   &__container {
     padding-top: 110px;
     text-align: center;
+    display: block;
   }
 
   &__imeg1 {
@@ -940,18 +933,11 @@ p {
   }
   &__gallary {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  @media (max-width: 1240px) {
-    &__gallary {
-      flex-direction: column;
-    }
-  }
-  @media (max-width: 992px) {
-    &__gallary {
-      flex-direction: column;
-    }
-  }
+
   @media (max-width: 767px) {
     &__gallary {
       flex-wrap: wrap;
@@ -963,32 +949,10 @@ p {
 
 .gallary {
   &__card {
-    margin: 0 0.9375rem;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    &:first-child {
-      margin-left: 0;
-    }
+    margin: 20px 0.9375rem;
   }
 
-  @media (max-width: 1240px) {
-    &__card {
-      margin: 0 auto;
-    }
-  }
-  @media (max-width: 992px) {
-    &__card {
-      margin: 0 auto;
-    }
-  }
-  @media (max-width: 767px) {
-    &__card {
-      margin: 0 auto;
-    }
-  }
+ 
   &__box {
     margin-bottom: 1.875rem;
     background-color: #95e1d3;
@@ -1331,6 +1295,7 @@ p {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding: 20px 0;
   }
   @media (max-width: 767px) {
     &__container {
@@ -1340,52 +1305,25 @@ p {
 
   &__section {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
-  @media (max-width: 1240px) {
-    &__section {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  @media (max-width: 992px) {
-    &__section {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
+  
   @media (max-width: 767px) {
     &__section {
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
   }
 }
 
 .section {
   &__blogcard {
-    margin: 0 0.9375rem;
-    &:first-child {
-      margin-left: 0px;
-    }
-
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
-  @media (max-width: 1240px) {
-    &__blogcard {
-      margin: 0 auto;
-      width: 100%;
-    }
-  }
-
-  @media (max-width: 992px) {
-    &__blogcard {
-      margin: 0 auto;
-      width: 100%;
-    }
+    position: relative;
+    max-width: 390px;
+    margin: 10px;
   }
 
   @media (max-width: 767px) {
@@ -1394,8 +1332,8 @@ p {
     }
   }
   &__photos {
+    width: 100%;
     margin-bottom: 20px;
-    position: relative;
   }
   @media (max-width: 767px) {
     &__photos {
@@ -1407,8 +1345,8 @@ p {
 
   &__date {
     position: absolute;
-    top: 67%;
-    left: -10px;
+    top: 40%;
+    left: -3%;
     padding: 0.9375rem;
     background: #95e1d3;
     b {
@@ -1423,17 +1361,7 @@ p {
     font-style: italic;
     font-weight: 300;
   }
-  @media (max-width: 1240px) {
-    &__date {
-      left: 21%;
-    }
-  }
 
-  @media (max-width: 992px) {
-    &__date {
-      left: 21%;
-    }
-  }
 
   &__blogtitle {
     color: #333333;
@@ -1566,6 +1494,7 @@ p {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url(/img/blog/bgmap.png) center no-repeat;
   width: 100%;
+  padding: 20px 0;
 
   &__information {
     padding: 57px 0;
@@ -1607,6 +1536,7 @@ p {
   justify-content: center;
   &__container {
     margin-top: 75px;
+    flex-direction: column;
   }
 
   &__content {
