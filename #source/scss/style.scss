@@ -61,7 +61,7 @@ body {
   align-items: center;
   width: 100%;
   background: linear-gradient(to bottom, rgb(232, 134, 131), rgba(238, 198, 87, 0.605)),
-    url(./img/header_BG.png) center no-repeat;
+    url(/img/header_BG.png) center no-repeat;
 
   &__content {
     display: flex;
