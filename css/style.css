@@ -266,19 +266,6 @@ b {
 .menu__items:hover:after {
   opacity: 1;
 }
-.menu__items:after {
-  content: "";
-  top: 100%;
-  left: 0;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  height: 3px;
-  margin: 12px auto 0;
-  background-color: #fce38a;
-  opacity: 0;
-  transition: opacity 0.2s linear;
-}
 @media (max-width: 767px) {
   .menu__items {
     display: flex;
@@ -860,6 +847,7 @@ p {
 }
 
 .active {
+  display: block;
   color: #fce38a;
 }
 
