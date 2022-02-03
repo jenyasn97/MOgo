@@ -937,7 +937,6 @@ p {
     justify-content: center;
   }
 
-
   @media (max-width: 767px) {
     &__gallary {
       flex-wrap: wrap;
@@ -952,7 +951,6 @@ p {
     margin: 20px 0.9375rem;
   }
 
- 
   &__box {
     margin-bottom: 1.875rem;
     background-color: #95e1d3;
@@ -1309,7 +1307,7 @@ p {
     justify-content: center;
     width: 100%;
   }
-  
+
   @media (max-width: 767px) {
     &__section {
       flex-direction: column;
@@ -1361,7 +1359,6 @@ p {
     font-style: italic;
     font-weight: 300;
   }
-
 
   &__blogtitle {
     color: #333333;
