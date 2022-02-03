@@ -530,7 +530,7 @@ b {
   display: flex;
   justify-content: center;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(./img/bg_dev.png) center no-repeat;
+    url(../img/bg_dev.png) center no-repeat;
   background-size: cover;
 
   &__text {
@@ -722,7 +722,7 @@ b {
       right: 20px;
       position: absolute;
       z-index: 1;
-      background: url(./img/ARROW_DOWN.png) no-repeat;
+      background: url(../img/ARROW_DOWN.png) no-repeat;
     }
   }
 
@@ -776,7 +776,7 @@ p {
       right: 20px;
       position: absolute;
       z-index: 1;
-      background: url(./img/ARROW_up.png) no-repeat;
+      background: url(../img/ARROW_up.png) no-repeat;
     }
   }
 }
@@ -1175,7 +1175,7 @@ p {
   display: flex;
   justify-content: center;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(./img/happy/bgHappy.png) center no-repeat;
+    url(../img/happy/bgHappy.png) center no-repeat;
   background-size: cover;
 
   &__container {
@@ -1456,7 +1456,7 @@ p {
       width: 20px;
       height: 17px;
       margin-right: 7px;
-      background: url(./img/blog/VIEW.png) center center no-repeat;
+      background: url(../img/blog/VIEW.png) center center no-repeat;
     }
   }
 
@@ -1482,7 +1482,7 @@ p {
       width: 20px;
       height: 17px;
       margin-right: 3px;
-      background: url(./img/blog/SPEECH_BUBBLE_2.png) center center no-repeat;
+      background: url(../img/blog/SPEECH_BUBBLE_2.png) center center no-repeat;
     }
   }
 }
@@ -1492,7 +1492,7 @@ p {
   display: flex;
   justify-content: center;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
-    url(./img/blog/bgmap.png) center no-repeat;
+    url(../img/blog/bgmap.png) center no-repeat;
   width: 100%;
   padding: 20px 0;
 
