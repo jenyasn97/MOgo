@@ -186,10 +186,13 @@ b {
   }
 
   &__logo {
+    a{
     font-size: 1.875rem;
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
+    color: white;
+    }
   }
 
   &__links {
@@ -253,6 +256,28 @@ b {
     }
   }
 }
+.a{
+  font-size: 1.875rem;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+}
+.menu--scroll {
+  background-color: rgb(232, 134, 131);
+  position: fixed;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 767px) {
+    & .menu--scroll {
+      background-color: rgb(232, 134, 131);
+      position: fixed;
+      padding: 15px 0;
+      top: 0;
+      right: 0;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
 
 .nav-toggle {
   display: none;
@@ -261,6 +286,9 @@ b {
   position: absolute;
   right: 30px;
   cursor: pointer;
+  &:focus{
+    outline: 0;
+  }
   &__item {
     display: block;
     width: 100%;
@@ -274,7 +302,7 @@ b {
     bottom: 0;
     margin: auto;
 
-    transition: transform .2s linear;
+    transition: transform 0.2s linear;
     &::before,
     &::after {
       content: "";
@@ -284,8 +312,7 @@ b {
       position: absolute;
       left: 0;
       z-index: 1;
-      transition: transform .2s linear;
-
+      transition: transform 0.2s linear;
     }
     &::before {
       top: -8px;
@@ -318,14 +345,6 @@ b {
   }
 }
 
-.menu--fixed {
-  background-color: rgb(232, 134, 131);
-  position: fixed;
-  padding: 15px 0;
-  top: 0;
-  right: 0;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-}
 //====================================================================================
 
 .about {
@@ -862,7 +881,7 @@ p {
   text-align: left;
 }
 .active {
-  display: block;
+  color: #fce38a;
 }
 
 .activecard {

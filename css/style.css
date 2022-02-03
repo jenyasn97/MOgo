@@ -239,11 +239,12 @@ b {
   justify-content: space-between;
   width: 100%;
 }
-.menu__logo {
+.menu__logo a {
   font-size: 1.875rem;
   font-weight: 700;
   text-align: left;
   text-transform: uppercase;
+  color: white;
 }
 .menu__links {
   display: flex;
@@ -302,6 +303,29 @@ b {
   }
 }
 
+.a {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.menu--scroll {
+  background-color: #e88683;
+  position: fixed;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 767px) {
+  .menu--scroll .menu--scroll {
+    background-color: #e88683;
+    position: fixed;
+    padding: 15px 0;
+    top: 0;
+    right: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  }
+}
+
 .nav-toggle {
   display: none;
   width: 30px;
@@ -309,6 +333,9 @@ b {
   position: absolute;
   right: 30px;
   cursor: pointer;
+}
+.nav-toggle:focus {
+  outline: 0;
 }
 .nav-toggle__item {
   display: block;
@@ -357,15 +384,6 @@ b {
 .nav-toggle.active .nav-toggle__item::after {
   transform-origin: left bottom;
   transform: rotate(-45deg) translateX(-3px);
-}
-
-.menu--fixed {
-  background-color: #e88683;
-  position: fixed;
-  padding: 15px 0;
-  top: 0;
-  right: 0;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
 .about {
@@ -842,7 +860,7 @@ p {
 }
 
 .active {
-  display: block;
+  color: #fce38a;
 }
 
 .activecard {
