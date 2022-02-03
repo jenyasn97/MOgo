@@ -177,13 +177,12 @@ b {
   right: 0;
   display: flex;
   justify-content: center;
-  margin-top: 1.875rem;
+  padding: 15px 0;
 
   &__container {
     display: flex;
     justify-content: space-between;
     width: 100%;
-
   }
 
   &__logo {
@@ -203,9 +202,10 @@ b {
   }
 
   &__items {
+    display: flex;
     color: #fff;
     padding: 0px 25px;
-    
+
     &:hover {
       color: #fce38a;
       transition: color 0.2s linear;
@@ -228,11 +228,103 @@ b {
       transition: opacity 0.2s linear;
     }
   }
+
   @media (max-width: 767px) {
     &__items {
+      display: flex;
+      width: 100%;
+      margin-top: 5px;
+      padding: 5px 20px;
+      &:after {
+        content: "";
+        display: none;
+      }
+    }
+    &__container {
+      flex-direction: column;
+    }
+    &__links {
+      display: block;
+    }
+  }
+  @media (max-width: 767px) {
+    &__none {
       display: none;
     }
   }
+}
+
+.nav-toggle {
+  display: none;
+  width: 30px;
+  padding: 15px 0;
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  &__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+
+    transition: transform .2s linear;
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      position: absolute;
+      left: 0;
+      z-index: 1;
+      transition: transform .2s linear;
+
+    }
+    &::before {
+      top: -8px;
+    }
+    &::after {
+      bottom: -8px;
+    }
+  }
+  @media (max-width: 767px) {
+    &.nav-toggle {
+      display: block;
+    }
+  }
+  &.active {
+    background-color: none;
+    & .nav-toggle {
+      &__item {
+        background: none;
+        &::before {
+          transform-origin: left top;
+          transform: rotate(45deg) translateX(-2px);
+        }
+        &::after {
+          transform-origin: left bottom;
+
+          transform: rotate(-45deg) translateX(-3px);
+        }
+      }
+    }
+  }
+}
+
+.menu--fixed {
+  background-color: rgb(232, 134, 131);
+  position: fixed;
+  padding: 15px 0;
+  top: 0;
+  right: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 //====================================================================================
 
@@ -357,7 +449,7 @@ b {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to bottom, rgb(232, 134, 131), rgba(238, 198, 87, 0.605));
-    img{
+    img {
       width: 100%;
     }
     &:hover {
@@ -964,7 +1056,7 @@ p {
     margin-bottom: 1.875rem;
     background-color: #95e1d3;
     position: relative;
-    img{
+    img {
       width: 100%;
     }
   }
