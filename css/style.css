@@ -86,6 +86,7 @@ body {
   width: 100%;
   padding: 0 15px;
   display: flex;
+  margin: 0 auto;
 }
 
 @media (max-width: 767px) {
@@ -128,6 +129,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100vh;
   background: linear-gradient(to bottom, #e88683, rgba(238, 198, 87, 0.605)), url(../img/header_BG.png) center no-repeat;
 }
 .header__content {
@@ -236,7 +238,6 @@ b {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border: 1px solid black;
 }
 .menu__logo {
   font-size: 1.875rem;
@@ -251,7 +252,6 @@ b {
   text-transform: uppercase;
   position: relative;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
 .menu__items {
   color: #fff;
@@ -276,6 +276,11 @@ b {
   background-color: #fce38a;
   opacity: 0;
   transition: opacity 0.2s linear;
+}
+@media (max-width: 767px) {
+  .menu__items {
+    display: none;
+  }
 }
 
 .about {
@@ -387,6 +392,9 @@ b {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to bottom, #e88683, rgba(238, 198, 87, 0.605));
+}
+.about__img img {
+  width: 100%;
 }
 .about__img:hover {
   transform: translate3d(-10px, -10px, 0);
@@ -921,6 +929,9 @@ p {
   margin-bottom: 1.875rem;
   background-color: #95e1d3;
   position: relative;
+}
+.gallary__box img {
+  width: 100%;
 }
 .gallary__social {
   position: absolute;
