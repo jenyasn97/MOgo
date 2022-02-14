@@ -872,6 +872,7 @@ p {
 }
 .comments__container {
   padding: 70px 0;
+  justify-content: center;
 }
 @media (max-width: 767px) {
   .comments__container {

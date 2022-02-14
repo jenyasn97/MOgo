@@ -21,7 +21,7 @@ $(function () {
     }
     else {
       fixed.removeClass("menu--scroll");
-      
+
 
     }
   }
@@ -50,5 +50,18 @@ $(function () {
 
     $(this).toggleClass("active");
     $("#links").toggleClass("menu__none");
+  })
+
+
+  //Collaps
+  $("[data-collapse").on("click", function (event) {
+    event.preventDefault();
+
+    var $this = $(this),
+      blockId = $this.data('collapse');
+
+      $(blockId).slideToggle("activecard");
+
+
   })
 });
